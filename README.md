@@ -1,12 +1,12 @@
 # CSDN-
 
-* 用 python 实现 增加 CSDN 的访问量
+# 用 python 实现 增加 CSDN 的访问量
 
 >前言：才开的一个 CSDN 的博客，感觉访问量好低，才几千，看到别人百万访问量感觉好爽，本着娱乐精神并且刚好最近也在学习 Python，就考虑用 python 做了一个自动访问 csdn 博客实现无限刷访问量的功能。
 
 >我们应当具有的条件：成功安装了 python 运行环境，安装了 requests 模块包
 
-* 可能需要的依赖包：
+### 可能需要的依赖包：
 
 1. [requests](https://pypi.python.org/packages/49/df/50aa1999ab9bde74656c2919d9c0c085fd2b3775fd3eca826012bef76d8c/requests-2.18.4-py2.py3-none-any.whl#md5=eb9be71cc41fd73a51a7c9cd1adde5de)
 
@@ -19,7 +19,7 @@
 5. [idna](https://pypi.python.org/packages/27/cc/6dd9a3869f15c2edfab863b992838277279ce92663d334df9ecf5106f5c6/idna-2.6-py2.py3-none-any.whl#md5=875c4a7b32b4897537d5ea9247b5c79e)
 
 
-* 安装和运行步骤：
+### 安装和运行步骤：
 
 1. 首先我们需要知道 csdn 访问量是基于什么原理来产生的，一般实现自增长的访问记录我们通常采用两种方式，一种是记录在 cookie值里面，一种是记录在 session 值中。
 
@@ -30,7 +30,7 @@
 4. 在我们电脑的控制台运行下载的 count.py 文件即可，mac 电脑在 terminal 中使用 <code>python count.py</code>，Windows 中使用 cmd 运行 <code>python count.py</code>；
 
 
-* 安装 requests 模块：
+### 安装 requests 模块：
 
 1. 首先下载 requests 模块包，下载地址：[requests for python](https://pypi.python.org/packages/49/df/50aa1999ab9bde74656c2919d9c0c085fd2b3775fd3eca826012bef76d8c/requests-2.18.4-py2.py3-none-any.whl#md5=eb9be71cc41fd73a51a7c9cd1adde5de)，下载好后修改后缀名为.zip，解压后把 requests 这个文件夹复制到 python 安装目录下的 lib 目录即可
 
