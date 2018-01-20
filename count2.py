@@ -28,7 +28,8 @@ while j<count:
             time.sleep(3)  #这个时间根据自己电脑处理速度设置，单位是s  
     else:    
         time.sleep(10) #这个时间根据自己电脑处理速度设置，单位是s</span>  
-        os.system('taskkill /F /IM /Applications/Firefox.app')  #google浏览器，其他的更换下就行  
+        os.system('taskkill /F /T /IM /Applications/Firefox.app')  #google浏览器，其他的更换下就行
+        #/F强制关闭进程  /T关闭的进程树及子树  /IM进程的映像名称
         #print 'time webbrower closed'  
           
     j=j+1    
