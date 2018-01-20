@@ -16,21 +16,18 @@ urllist=[
 'http://blog.csdn.net/carolcoral/article/details/79016608',
 'http://blog.csdn.net/carolcoral/article/details/79009155',
 'http://blog.csdn.net/carolcoral/article/details/78895236']
-j=0    
-while j<count:    
+for j in range(0,100000):#设置循环的总次数   
     i=0    
     while i<=8 :  
         #s.get('http://blog.csdn.net')  
         for url in urllist:
-            web.open(url)  #网址替换这里  
+            web.open(url)  #访问网址地址，语法 .open(url,new=0,Autorasise=True),设置 new 的值不同有不同的效果0、1、2  
             #s.cookies.clear()
             i=i+1    
-            time.sleep(3)  #这个时间根据自己电脑处理速度设置，单位是s  
+            time.sleep(3)  #设置每次打开新页面的等待时间
     else:    
-        time.sleep(10) #这个时间根据自己电脑处理速度设置，单位是s</span>  
+        time.sleep(10) #设置每次等待关闭浏览器的时间  
         os.system('taskkill /F /T /IM /Applications/Firefox.app')  #google浏览器，其他的更换下就行
         #/F强制关闭进程  /T关闭的进程树及子树  /IM进程的映像名称
-        #print 'time webbrower closed'  
-          
-    j=j+1    
+        #print 'time webbrower closed'    
  
