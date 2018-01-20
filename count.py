@@ -7,12 +7,12 @@ import os
 import random
 import requests
 
-s = requests.session()  #获取session 值
 count = random.randint(1,2)    
 j=0    
 while j<count:    
     i=0    
     while i<=8 :  
+        s = requests.session()  #获取session 值
         s.get('http://blog.csdn.net')  #获取指定网址的 coockie 值
         web.open_new_tab('http://blog.csdn.net/carolcoral/article/details/79105562')  #网址替换这里  
         s.cookies.clear() # 每次访问后清除 coockie
