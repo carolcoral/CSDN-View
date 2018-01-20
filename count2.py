@@ -30,4 +30,3 @@ for j in range(0,100000):#设置循环的总次数
         os.system('taskkill /F /T /IM /Applications/Firefox.app')  #google浏览器，其他的更换下就行
         #/F强制关闭进程  /T关闭的进程树及子树  /IM进程的映像名称
         #print 'time webbrower closed'    
- 
