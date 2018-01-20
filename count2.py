@@ -27,6 +27,6 @@ for j in range(0,100000):#设置循环的总次数
             time.sleep(3)  #设置每次打开新页面的等待时间
     else:    
         time.sleep(10) #设置每次等待关闭浏览器的时间  
-        os.system('taskkill /F /T /IM /Applications/Firefox.app')  #google浏览器，其他的更换下就行
+        os.system('taskkill /F /IM Firefox.app')  #浏览器，其他的更换下就行
         #/F强制关闭进程  /T关闭的进程树及子树  /IM进程的映像名称
         #print 'time webbrower closed'    
