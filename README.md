@@ -41,15 +41,21 @@
 
 ### 安装 requests 模块：
 
+* 方法一：
+
 1. 首先下载 requests 模块包，下载地址：[requests for python](https://pypi.python.org/packages/49/df/50aa1999ab9bde74656c2919d9c0c085fd2b3775fd3eca826012bef76d8c/requests-2.18.4-py2.py3-none-any.whl#md5=eb9be71cc41fd73a51a7c9cd1adde5de)，下载好后修改后缀名为.zip，解压后把 requests 这个文件夹复制到 python 安装目录下的 lib 目录即可
 
-2. 解压下载好的文件夹到你安装 python 的根目录下
+2. 在 python shell 中使用<code>import requests</code> 查看是否成功安装导入
 
-3. 打开控制台，使用 cd 命令切换到 requests 解压后的路径下
+* 方法二：
 
-4. 运行命令<code>python setup.py install</code>
+1. 解压下载好的文件夹到你安装 python 的根目录下
 
-5. 在 python shell 中使用<code>import requests</code> 查看是否成功安装导入
+2. 打开控制台，使用 cd 命令切换到 requests 解压后的路径下
+
+3. 运行命令<code>python setup.py install</code>
+
+4. 在 python shell 中使用<code>import requests</code> 查看是否成功安装导入
 
 
 ### Issus
