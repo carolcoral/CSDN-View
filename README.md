@@ -7,14 +7,6 @@
 >我们应当具有的条件：成功安装了 python 运行环境，安装了 requests 模块包
 
 
-## Version 1.0 count.py
-
-   >实现了增加访问的基本功能，只能访问单一界面。
-
-## Version 1.1 count2.py
-
-   >实现了多页面的访问，采用了 list 的方式存储 url。
-
 ### 可能需要的依赖包：
 
 1. [requests](https://pypi.python.org/packages/49/df/50aa1999ab9bde74656c2919d9c0c085fd2b3775fd3eca826012bef76d8c/requests-2.18.4-py2.py3-none-any.whl#md5=eb9be71cc41fd73a51a7c9cd1adde5de)
