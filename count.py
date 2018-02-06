@@ -7,18 +7,68 @@ import requests
 #s = requests.seesion()  
 #count = random.randint(1,2)   
 urllist=[
-'http://blog.csdn.net/carolcoral/article/details/78789454',
-'http://blog.csdn.net/carolcoral/article/details/77857264',
-'http://blog.csdn.net/carolcoral/article/details/79105562',
-'http://blog.csdn.net/carolcoral/article/details/79041873',
-'http://blog.csdn.net/carolcoral/article/details/79034589',
-'http://blog.csdn.net/carolcoral/article/details/79022987',
-'http://blog.csdn.net/carolcoral/article/details/79016608',
-'http://blog.csdn.net/carolcoral/article/details/79009252',
-'http://blog.csdn.net/carolcoral/article/details/79009155',
-'http://blog.csdn.net/carolcoral/article/details/79009058',
-'http://blog.csdn.net/carolcoral/article/details/79009033',
-'http://blog.csdn.net/carolcoral/article/details/78898494']
+    'http://blog.csdn.net/carolcoral/article/details/79219736',
+    'http://blog.csdn.net/carolcoral/article/details/79168741',
+    'http://blog.csdn.net/carolcoral/article/details/78895236',
+    'http://blog.csdn.net/carolcoral/article/details/78889581',
+    'http://blog.csdn.net/carolcoral/article/details/78874916',
+    'http://blog.csdn.net/carolcoral/article/details/78869401',
+    'http://blog.csdn.net/carolcoral/article/details/78861164',
+    'http://blog.csdn.net/carolcoral/article/details/78861129',
+    'http://blog.csdn.net/carolcoral/article/details/78806239',
+    'http://blog.csdn.net/carolcoral/article/details/78805088',
+    'http://blog.csdn.net/carolcoral/article/details/78800717',
+    'http://blog.csdn.net/carolcoral/article/details/78798659',
+    'http://blog.csdn.net/carolcoral/article/details/78794191',
+    'http://blog.csdn.net/carolcoral/article/details/78784467',
+    'http://blog.csdn.net/carolcoral/article/details/78774841',
+    'http://blog.csdn.net/carolcoral/article/details/78759821',
+    'http://blog.csdn.net/carolcoral/article/details/78753593',
+    'http://blog.csdn.net/carolcoral/article/details/78753106',
+    'http://blog.csdn.net/carolcoral/article/details/78751965'
+]
+
+urllist2=[
+    'http://blog.csdn.net/carolcoral/article/details/78749019',
+    'http://blog.csdn.net/carolcoral/article/details/78745159',
+    'http://blog.csdn.net/carolcoral/article/details/78744549',
+    'http://blog.csdn.net/carolcoral/article/details/78742338',
+    'http://blog.csdn.net/carolcoral/article/details/78733121',
+    'http://blog.csdn.net/carolcoral/article/details/78728532',
+    'http://blog.csdn.net/carolcoral/article/details/78728503',
+    'http://blog.csdn.net/carolcoral/article/details/78728362',
+    'http://blog.csdn.net/carolcoral/article/details/78728191',
+    'http://blog.csdn.net/carolcoral/article/details/78728132'
+]
+
+urllist3=[
+    'http://blog.csdn.net/carolcoral/article/details/78728101',
+    'http://blog.csdn.net/carolcoral/article/details/78723497',
+    'http://blog.csdn.net/carolcoral/article/details/78723492',
+    'http://blog.csdn.net/carolcoral/article/details/78722074',
+    'http://blog.csdn.net/carolcoral/article/details/78717817',
+    'http://blog.csdn.net/carolcoral/article/details/78712050',
+    'http://blog.csdn.net/carolcoral/article/details/78711141',
+    'http://blog.csdn.net/carolcoral/article/details/78710447',
+    'http://blog.csdn.net/carolcoral/article/details/78709321',
+    'http://blog.csdn.net/carolcoral/article/details/78708034',
+    'http://blog.csdn.net/carolcoral/article/details/78680069',
+    'http://blog.csdn.net/carolcoral/article/details/78680045',
+    'http://blog.csdn.net/carolcoral/article/details/78680032',
+    'http://blog.csdn.net/carolcoral/article/details/78680016',
+    'http://blog.csdn.net/carolcoral/article/details/78678984'
+]
+
+urllist4=[
+    'http://blog.csdn.net/carolcoral/article/details/78678970',
+    'http://blog.csdn.net/carolcoral/article/details/78674588',
+    'http://blog.csdn.net/carolcoral/article/details/78674571',
+    'http://blog.csdn.net/carolcoral/article/details/78674551',
+    'http://blog.csdn.net/carolcoral/article/details/77857346'
+]
+
+
+
 for j in range(0,100000):#设置循环的总次数   
     i=0    
     while i<1 :  #一次打开浏览器访问的循环次数
